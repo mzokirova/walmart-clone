@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      colors: {
+        walmart:"#0071DC"
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
