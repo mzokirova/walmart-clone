@@ -1,3 +1,4 @@
+import AddToCart from "@/components/AddToCart";
 import { Badge } from "@/components/ui/badge";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
@@ -77,7 +78,7 @@ async function ProductPage({ searchParams: { url } }: Props) {
                 <p className="text-2xl font-bold mt-2">
                     {product?.currency} {product.price}
                 </p>
-                {/* <AddToCart product={product} /> */}
+                <AddToCart product={product} />
                 <hr />
                 <h3 className="font-bold text-xl pt-10">Specifications</h3>
                 <Table>
